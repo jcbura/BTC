@@ -23,7 +23,7 @@ response = session.get(url, params=parameters)
 
 original_stdout = sys.stdout
 
-with open('/Users/jason/BTC_PRICE_CHECKER/btc_price.txt', 'a') as f:
+with open('', 'a') as f:
     sys.stdout = f
     print('Price of bitcoin @ {}'.format(now), 'is:')
     print(json.loads(response.text)['data']['1']['quote']['USD']['price'])
